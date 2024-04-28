@@ -33,7 +33,7 @@ const CountDown = ({ date }: Props) => {
 			minutes.value = timerState.value.minutes
 			days.value = timerState.value.days
 			seconds.value = timerState.value.seconds
-			if (seconds.value < 1) {
+			if (countDown.value < 1) {
 				toast("Task Completed")
 				clearInterval(interValId.value)
 			}
